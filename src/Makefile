@@ -331,7 +331,7 @@ CClink = $(CC)
 # Uncomment this line when you don't want to get the GUI version, although you
 # have GTK, Motif and/or Athena.  Also use --without-x if you don't want X11
 # at all.
-#CONF_OPT_GUI = --disable-gui
+CONF_OPT_GUI = --disable-gui
 
 # Uncomment one of these lines if you have that GUI but don't want to use it.
 # The automatic check will use another one that can be found.
@@ -453,7 +453,7 @@ CClink = $(CC)
 #CONF_OPT_PYTHON = --enable-pythoninterp
 #CONF_OPT_PYTHON = --enable-pythoninterp --with-python-command=python2.7
 #CONF_OPT_PYTHON = --enable-pythoninterp=dynamic
-#CONF_OPT_PYTHON3 = --enable-python3interp
+CONF_OPT_PYTHON3 = --enable-python3interp
 #CONF_OPT_PYTHON3 = --enable-python3interp --with-python3-command=python3.6
 #CONF_OPT_PYTHON3 = --enable-python3interp=dynamic
 
@@ -476,7 +476,7 @@ CClink = $(CC)
 
 # CSCOPE
 # Uncomment this when you want to include the Cscope interface.
-#CONF_OPT_CSCOPE = --enable-cscope
+CONF_OPT_CSCOPE = --enable-cscope
 
 # NETBEANS - NetBeans interface. Only works with Motif, GTK, and gnome.
 # Motif version must have XPM libraries (see |netbeans-xpm|).
@@ -548,7 +548,7 @@ CClink = $(CC)
 #CONF_OPT_FEAT = --with-features=small
 #CONF_OPT_FEAT = --with-features=normal
 #CONF_OPT_FEAT = --with-features=big
-#CONF_OPT_FEAT = --with-features=huge
+CONF_OPT_FEAT = --with-features=huge
 
 # COMPILED BY - For including a specific e-mail address for ":version".
 #CONF_OPT_COMPBY = "--with-compiledby=John Doe <JohnDoe@yahoo.com>"
@@ -558,7 +558,7 @@ CClink = $(CC)
 # Also disable the GUI above, otherwise it will be included anyway.
 # When both GUI and X11 have been disabled this may save about 15% of the
 # code and make Vim startup quicker.
-#CONF_OPT_X = --without-x
+CONF_OPT_X = --without-x
 
 # X WINDOWS DIRECTORY - specify X directories
 # If configure can't find you X stuff, or if you have multiple X11 derivatives
@@ -1026,6 +1026,7 @@ TOOLS = xxd/xxd$(EXEEXT)
 #
 # Uncomment the next line to install Vim in your home directory.
 #prefix = $(HOME)
+prefix = /opt
 
 ### exec_prefix	is the top directory for the executable (default $(prefix))
 #
